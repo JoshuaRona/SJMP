@@ -1,0 +1,493 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+body{
+    background-image: url('bgPic2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.header{
+    text-align: center;
+}
+.header img{
+    width: 320px;
+}
+
+.header h1{
+    font-family: 'Prompt', sans-serif;
+    color: lightblue;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.header h4{
+    font-family: 'Hind', sans-serif;
+    color:lavenderblush;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.header a{
+    text-decoration: none;
+}
+
+.menu_wrapper{
+    height: 50px;
+    width: 100%;
+    line-height: 5px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    opacity: .97;
+}
+
+.menu_wrapper .navbar{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu_wrapper .navbar li{
+    list-style: none;
+    flex: 1;
+    font: 30px;
+    cursor: pointer;
+}
+
+.menu_wrapper .navbar li a{
+    font-family: 'Overpass', sans-serif;
+    color: #252552;
+    transition: 0.2s ease;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu_wrapper .navbar li .active{
+    color: darkcyan;
+    border-bottom: 5px solid cornflowerblue;
+    border-radius: 5px;
+    transition: 1 ease;
+}
+
+.menu_wrapper .navbar li :hover{
+    color: cadetblue;
+}
+
+.oms{
+    display: none;
+    text-align: left;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 99%;
+    background-color: lightblue;
+}
+
+.activities {
+    display: none;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 50%;
+    background-color: lightblue;
+    line-height: 15px;
+}
+
+.homepage{
+    overflow: hidden;
+    position: absolute;
+    height: 200px;
+    width: 96%;
+    margin-left: 17px;
+    margin-top: 20px;
+    background-color: lightblue;
+    font-family: 'Spline Sans Mono', monospace;
+}
+.homepage .container{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.homepage .container button{
+    background-color: #47a386;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+.homepage .container .modal-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+.homepage .container .modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.homepage .container .modal-container .modal{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    width: 400px;
+    max-width: 110%;
+    text-align: center;
+}
+.homepage .container .modal-container .modal h1{
+    margin: 17px;
+    line-height: 1.2;
+}
+.homepage .container .modal-container .modal form{
+    margin: 15px;
+}
+.homepage .container .modal-container .modal label{
+    width: 100px;
+    display: inline-block;
+}
+.homepage .container .modal-container .modal input{
+    margin: 5px;
+    width: 65%;
+}
+.homepage .container .modal-container .modal form select{
+    margin: 5px;
+}
+.homepage .container .modal-container .modal form textarea{
+    resize: none;
+}
+
+
+.about{
+    display: none;
+    height: fit-content;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    place-content: center;
+    background-color: lightblue;
+}
+.wrapper{
+    margin: 10px;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+    width: 100px;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+    background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    background: #c32aa3;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #ff0000;
+}
+
+.wrapper .button:nth-child(1) .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    color: #252552;
+}
+.wrapper .button:nth-child(2) .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    color: purple;
+}
+.wrapper .button:nth-child(3) .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    color: red;
+}
+.wrapper .button:nth-child(1):hover .icon i{
+    color:lightskyblue;
+}
+.wrapper .button:nth-child(2):hover .icon i{
+    color:violet;
+}
+.wrapper .button:nth-child(3):hover .icon i{
+    color:lightsalmon;
+}
+
+.details{
+    margin-top: 2px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.details a{
+    text-decoration: none;
+    color: #001D6E;
+}
+
+.history{
+    display: none;
+    height: max-content;
+    width: 97%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    place-content: center;
+    background-color: lightblue;
+    overflow: hidden;
+}
+.tab{
+    display: none;
+    text-align: left;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 99%;
+    background-color: lightblue;
+  }
+
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 9px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #83BD75;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #E9EFC0;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding-top: 11%;
+    border: 1px solid #ccc;
+    background-color: #E9EFC0;
+    width: 100%;
+    border-left: none;
+    height: 491px;
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Clear floats after the tab */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Style tab links */
+.tablink {
+    background-color: #05595B;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+    
+  }
+  
+  .tablink:hover {
+    background-color: #062C30;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcont {
+    color: white;
+    display: none;
+    padding: 75px;
+    height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+  }
+  .tabcont p{
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 22px;
+  }
+  
+  #Office {background-color: #085E7D;}
+  #Mass {background-color: #008E89;}
+
+.hero{
+    width: 85%;
+    height: 330px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.btn_box{
+    display: flex;
+    border-bottom: 3px solid #525E75;
+}
+.btn_box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+}
+.btn_box button:nth-child(1):hover .fa-solid{
+    color: #001D6E;
+}
+.btn_box button:nth-child(2):hover .fa-solid{
+    color: #006E7F;
+}
+.btn_box button:nth-child(3):hover .fa-solid{
+    color: #2A2550;
+}
+.content-right img{
+    width: 200px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+.content-left{
+    flex-basis: 50%;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.content-left p{
+    font-size: 17px;
+    font-family: 'Vazirmatn', sans-serif;
+    padding: 30px 0;
+    margin-right: 260px;
+    text-align: left;
+    width: 100%;
+}
+.content-right{
+    flex-basis: 50%;
+    text-align: center;
+    margin-right: 70px;
+}
+#content1{
+    transform: translateX(0px);
+}
+
+
+@media screen and (max-width: 700px)
+{
+    .header
+    {
+        display: none;
+    }
+    .menu_wrapper
+    {
+        display: none;
+    }
+    .homepage
+    {
+        display: none;
+    }
+    .oms
+    {
+        display: none;
+    }
+    .activities
+    {
+        display: none;
+    }
+    .history
+    {
+        display: none;
+    }
+    .about
+    {
+        display: none;
+    }
+}
+
+.history .container .content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 19px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    line-height: 1.4;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.history .container .content-table thead tr{
+    background-color: #009878;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.history .container .content-table th,
+.history .container .content-table td{
+    padding: 12px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.history .container .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.history .container .content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.history .container .content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009878;
+}
