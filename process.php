@@ -86,7 +86,7 @@ if(isset($_GET['remove']))
     $mysqli->query("DELETE from appoinment WHERE id=$id") or die($mysqli->error);
 
     
-    header("location:index.php");
+    header("location:admin.php");
 }
 
 if(isset($_GET['insert']))
@@ -95,6 +95,6 @@ if(isset($_GET['insert']))
     $mysqli->query("INSERT INTO request (name, email, contact, date_time, reason) SELECT name, email, contact, date_time, reason FROM appoinment WHERE id = $id") or die($mysqli->error);
 
     
-    header("location:index.php");
+    header("location:admin.php");
 }
 ?>

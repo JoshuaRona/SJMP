@@ -198,7 +198,7 @@ YES</label>
 <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"/>
 <br>
 <div id="ifYes" style="display:none">
-<a href="SJMPWebsite.php"><button class="button button2">Go back</button></a>
+<a href="index.php"><button class="button button2">Go back</button></a>
 </div>
 <label style="font-family: 'Raleway', sans-serif;">Are you sure you already click the send button?</label>
 <script>

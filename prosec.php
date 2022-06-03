@@ -20,7 +20,7 @@ if(isset($_GET['delete']))
     $_SESSION['message'] = "Record has been deleted!";
     $_SESSION['msg_type'] = "danger";
 
-    header("location:index.php");
+    header("location:admin.php");
 }
 
 if(isset($_POST['save']))
@@ -54,7 +54,7 @@ if(isset($_GET['insert']))
     $id=$_GET['insert'];
     $mysqli->query("INSERT INTO request (name, email, contact, date_time, reason) SELECT name, email, contact, date_time, reason FROM appoinment WHERE id = $id") or die($mysqli->error);
 
-    header("location:index.php");
+    header("location:admin.php");
 }
 
 if(isset($_GET['delete']))
@@ -74,7 +74,7 @@ if(isset($_GET['remove']))
     $mysqli->query("DELETE from appoinment WHERE id=$id") or die($mysqli->error);
 
     
-    header("location:index.php");
+    header("location:admin.php");
 }
 
 if(isset($_GET['deleteRec']))
@@ -83,6 +83,6 @@ if(isset($_GET['deleteRec']))
     $mysqli->query("DELETE from request WHERE id=$id") or die($mysqli->error);
 
     
-    header("location:index.php");
+    header("location:admin.php");
 }
 ?>

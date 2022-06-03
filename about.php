@@ -50,7 +50,7 @@ session_start();
                 </a>
             </li>
             <li>
-                <a href="SJMPWebsite.php" class="btn" id="about">
+                <a href="index.php" class="btn" id="about">
                 <i class='bx bx-right-arrow-alt'></i>
                     <span class="links_name">Go to site</span>
                 </a>

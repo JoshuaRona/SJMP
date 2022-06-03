@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 <head>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styleAct.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <title>Document</title>
 </head>
@@ -20,7 +20,7 @@ session_start();
         </div>
         <ul class="nav_list" id="nav_list">
             <li>
-                <a href="#" class="btn" id="home">
+                <a href="#" class="btn active" id="home">
                     <i class='bx bx-home-alt-2' ></i>
                     <span class="links_name">Home</span>
                 </a>
@@ -32,7 +32,7 @@ session_start();
                 </a>
             </li>
             <li>
-                <a href="#" class="btn active" id="activities">
+                <a href="#" class="btn" id="activities">
                     <i class='bx bx-notepad'></i>
                     <span class="links_name">Activities</span>
                 </a>
