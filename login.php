@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost','root','','epiz_31877959_sanjoseparish') or die ('Unable to connect');
+$conn = mysqli_connect('localhost','root','','links') or die ('Unable to connect');
 ?>
 
 <!DOCTYPE html>

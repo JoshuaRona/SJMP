@@ -4,10 +4,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <div class="header">
-      <img src="sjmpLogo.png" id="logo">
+      <a href="login.php"><img src="sjmpLogo.png" id="logo"></a>
     <h1>SAN JOSE MANGGAGAWA PARISH</h1>
     <a href="https://www.google.com/maps/dir//3025+Molave+St,+Tondo,+Manila,+1013+Metro+Manila/@14.6314359,120.9760999,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3397b5e78f553809:0xb7f5deba5d6439be!2m2!1d120.9782886!2d14.6314359"><h4>3025 Molave Street, Manuguit, Tondo, Manila, Philippines</h4></a>
   </div>
@@ -27,7 +28,7 @@
         <div class="modal-container" id="modal-container">
             <div class="modal">
               <h1>Appointment Schedule</h1>
-              <form action="prosec.php" method="POST">
+              <form method="POST">
                 <label>Fullname</label>
                 <input type="text" name="name" placeholder="Enter your Fullname">
                 <label>Email</label>
@@ -166,7 +167,7 @@
     require_once 'process.php';
     ?>
     <?php
-    $mysqli = new mysqli('sql203.epizy.com','epiz_31877959','pZT7TSITidY','epiz_31877959_sanjoseparish') or die(mysqli_error($mysqli));
+    $mysqli = new mysqli('localhost','root','','links') or die(mysqli_error($mysqli));
     $result = $mysqli->query("SELECT * from data") or die($mysqli->error);
     ?>
             <?php

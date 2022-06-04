@@ -1,11 +1,11 @@
 <?php
 
-$server = "sql203.epizy.com";
-$username = "epiz_31877959";
-$password = "pZT7TSITidY";
-$database = "epiz_31877959_sanjoseparish";
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbase = "links";
 
-$conn = mysqli_connect($server, $username, $password, $database);
+$conn = mysqli_connect($server, $username, $password, $dbase);
 
 if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());

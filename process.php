@@ -1,7 +1,7 @@
 <?php
 
 
-$mysqli = new mysqli('sql203.epizy.com','epiz_31877959','pZT7TSITidY','epiz_31877959_sanjoseparish') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('localhost','root','','links') or die(mysqli_error($mysqli));
 
 $id = 0;
 $update=false;
